@@ -1,0 +1,50 @@
+<div>
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        
+        <!-- Menu -->
+        <div class="menu">
+
+                <div class="img_center">
+                    <a href="#/" @click="home()">
+                    <img src="assets/images/user/jms.png" class="user-logo" alt=""> 
+                </a> 
+                 <div>
+                        Web Developer
+                    </div>
+                    <hr>
+                </div>
+          
+
+            <ul class="list"> 
+              
+                        <li :class="{ vertical: sobreActive }" class="">
+                            <a href="#/sobre" @click="sobreMi()">
+                                <span>Sobre mi</span></a>
+                        </li>
+                        <li  :class="{ vertical: portifolioActive }" class="" @click="portifolio()">
+                            <a href="#/portfolio">
+                                <i class="menu-icon ti-briefcase"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li :class="{ vertical: habilidadeActive }" class=""  @click="habilidade()">
+                            <a href="#/habilidade">
+                                <span>Habilidades</span></a>
+                        </li>
+                        <li  :class="{ vertical: contactoActive }" class=""  @click="contacto()">
+                            <a href="#/contacto">
+                                <span>Contacto</span></a>
+                        </li>
+                        <li  :class="{ vertical: blogActive }" class=""  @click="blog()">
+                            <a href="#/">
+                                <span>Blog</span></a>
+                        </li>
+                     
+            </ul>
+        </div>
+        <!-- #Menu -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+
+</div>
