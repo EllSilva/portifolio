@@ -1,0 +1,225 @@
+<div>
+    
+<div class="portifolio">
+    <div class="lbox" id="img1">
+        <div class="box-img"> 
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/01.jpg">
+                <a href="#img2" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img2">
+        <div class="box-img">
+            <a href="#img1" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/02.jpg">
+                <a href="#img3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img3">
+        <div class="box-img">
+            <a href="#img2" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/03.jpg">
+                <a href="#img4" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img4">
+        <div class="box-img">
+            <a href="#img3" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/04.jpg">
+                <a href="#img5" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img5">
+        <div class="box-img">
+            <a href="#img4" class="btn2" id="prev"> <i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/05.jpg">
+                <a href="#img6" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img6">
+        <div class="box-img">
+            <a href="#img5" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/06.jpg">
+                <a href="#img7" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img7">
+        <div class="box-img">
+            <a href="#img6" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/07.jpg">
+                <a href="#img8" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img8">
+        <div class="box-img">
+            <a href="#img7" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/06.jpg">
+                <a href="#img9" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        </div>  
+    </div>
+    <div class="lbox" id="img9">
+        <div class="box-img">
+            <a href="#" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
+                 <a href="#/portfolio" class="btn2" id="close">X</a> 
+                 <img src="assets/images/07.jpg"> 
+        </div>  
+    </div>
+   
+</div>
+
+
+  <section class="content">
+        <div class="container-fluid">
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12">
+                    <div class="tab-content"> 
+                            <div class="row clearfix">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="card project_widget">
+
+                                        <div class="body">
+
+                                            <h5 class="m-t-30 name-inicio">
+                                                Meu Portifolio
+                                            </h5>
+                                            <p class="m-t-10">
+                                                Uma pequena galeria de projetos recentes escolhidos por mim.
+                                               <br> Eu fiz tudo isso junto com pessoas incríveis de empresas ao redor do mundo.
+                                            </p>
+
+
+                                            <div class="card">
+
+                                                <div class="body">
+                                                    <div class="bootstrap snippet">
+                                                        <section id="portfolio" class="gray-bg padding-top-bottom">
+                                                            <!--==== Portfolio Filters ====-->
+                                                            <div class="categories">
+                                                                <ul>
+                                                                    <li :class="{ active: todos }">
+                                                                        <a href="#" @click="todas()">Todas as categorias</a>
+                                                                    </li>
+                                                                    <li :class="{ active: webX }">
+                                                                        <a href="#" @click="web()">Designer de Web</a>
+                                                                    </li>
+                                                                    <li :class="{ active: appX }">
+                                                                        <a href="#" @click="app()">Apps</a>
+                                                                    </li>
+                                                                    <li :class="{ active: psdX }">
+                                                                        <a href="#" @click="psd()">PSD</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                        
+                                                            
+                        
+                                                            <!-- ======= Portfolio items ===-->
+                                                            <div class="projects-container scrollimation in">
+                        
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="card bg-jms">
+                                                                           
+                                                                                <div class="row ">
+                                                                                    <main class="galeria">
+                        
+                                                                                        <div class="portfolio_item "
+                                                                                            v-if="jms === 'web' || jms === 'todos'">
+                                                                                            <a href="#img1"> 
+                                                                                            <img class="" src="assets/images/01.jpg"> 
+                                                                                        </a>
+                        
+                                                                                        </div>
+                                                                                        <div class="portfolio_item"
+                                                                                            v-if="jms === 'psd' || jms === 'todos'">
+                                                                                                <a href="#img2"> 
+                                                                                            <img class="" src="assets/images/02.jpg">
+                                                                                               </a>
+                        
+                                                                                        </div>
+                                                                                        <div class="portfolio_item"
+                                                                                            v-if="jms === 'psd' || jms === 'todos'">
+                                                                                                <a href="#img3"> 
+                                                                                            <img class="" src="assets/images/03.jpg">
+                                                                                               </a>
+                        
+                                                                                        </div>
+                                                                                        <div class="portfolio_item"
+                                                                                            v-if="jms === 'psd' || jms === 'todos'">
+                                                                                                <a href="#img4"> 
+                                                                                            <img class="" src="assets/images/04.jpg">
+                                                                                               </a>
+                                                                                        </div>
+                        
+                                                                                        <div class="portfolio_item"
+                                                                                            v-if="jms === 'web' || jms === 'todos'">
+                                                                                                <a href="#img5"> 
+                                                                                            <img class="" src="assets/images/05.jpg">
+                                                                                               </a>
+                                                                                        </div>
+                        
+                                                                                        <div class="portfolio_item"
+                                                                                            v-if="jms === 'app' || jms === 'todos'">
+                                                                                                <a href="#img6"> 
+                                                                                            <img class="" src="assets/images/06.jpg">
+                                                                                               </a>
+                                                                                        </div>
+                        
+                                                                                        <div class=" portfolio_item"
+                                                                                            v-if="jms === 'psd' || jms === 'todos'">
+                                                                                                <a href="#img7"> 
+                                                                                            <img class="" src="assets/images/07.jpg">
+                                                                                               </a>
+                                                                                        </div>
+                                                                                        
+                                                                                    <div class="portfolio_item"
+                                                                                        v-if="jms === 'app' || jms === 'todos'">
+                                                                                            <a href="#img8"> 
+                                                                                        <img class="" src="assets/images/06.jpg">
+                                                                                           </a>
+                                                                                    </div>
+                        
+                                                                                    <div class=" portfolio_item"
+                                                                                        v-if="jms === 'psd' || jms === 'todos'">
+                                                                                            <a href="#img9"> 
+                                                                                        <img class="" src="assets/images/07.jpg">
+                                                                                           </a>
+                                                                                    </div>
+                         
+                                                                                    </main>
+                                                                                </div>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                        
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+ 

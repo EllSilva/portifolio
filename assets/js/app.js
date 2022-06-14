@@ -36,7 +36,11 @@ const router = new Router({ routes })
 
 new Vue({
     router,
-    data: {}
+    data: {
+        jms: "joaquim"
+    },
+
+  
 }).$mount('#app')
 
 ;(async () => { })()

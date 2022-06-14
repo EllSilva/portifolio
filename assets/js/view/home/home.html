@@ -2,207 +2,64 @@
     <section class="content">
         <div class="container-fluid">
 
-            <div class="row clearfix">
-                
+            <div class="row">
+
                 <div class="col-lg-12 col-md-12">
-                    <div class="card">
-                        <div class="profile-tab-box">
-                            <div class="p-l-20">
-                                <ul class="nav ">
-                                    <li class="nav-item tab-all">
-                                        <a class="nav-link show" href="#" :class="{ active: sobreActive }"
-                                            @click="sobreMi()">
-                                            <h5>Sobre mim</h5>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item tab-all p-l-20">
-                                        <a class="nav-link" href="#" :class="{ active: trabalhoActive }"
-                                            @click="trabalhoFeito()">
-                                            <h5>Trabalhos feito</h5>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane" :class="{ active: sobreActive }" id="project">
-                            <div class="row clearfix">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="card project_widget">
 
-                                        <div class="body">
+                    <div class="tab-pane">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="card">
 
-                                          
+                                    <div class="body">
+                                        <div class="inicio ">
 
-                                                <h5 class="m-t-30 name-inicio"> 
-                                                    👋🏽 Oi, 
-                                                </h5>
-                                                <h5 class="m-t-10 name-inicio"> 
-                                                   eu sou Joaquim,
-                                                </h5>
-                                                <h5 class="m-t-10 name-inicio"> 
-                                                    desenvolvedor web
-                                                </h5>
- 
-                                            <p class="m-t-10">
+                                            <h5 class="m-t-30 inicio_texte">
+                                                Hi 👋🏽,  
+                                            </h5>
+                                            <h5 class="m-t-10 inicio_texte">
+                                                eu sou <span class="nome_titulo" aria-hidden="true" style="opacity: 1;">Joaquim</span>,
+                                                
+                                            </h5>
+                                            <h5 class="m-t-10 inicio_texte">
+                                                design / desenvolvedor web
+                                            </h5>
+
+                                            <p class="m-t-10 subtitulo">
                                                 Sou um desenvolvedor full stack e Design criativo que vive em
                                                 Angola-Luanda.
-                                            </p> 
-                                                <div class="precisas">
-                                                    <div>   
-                                                        Preciso de um Desenvolvedor
-                                                    </div>
-                                                    <h4 class="task-header">vamos trabalhar juntos <i class="fas fa-arrow-right"></i> </h4>
-                                                     
-                                                </div>
-                                        
+                                            </p>
 
                                             <br>
+                                            <button class="btn btn-white btn-round z-depth-5 btn_jms">Contactar-me!</button>
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
-                        </div>
 
-                        <div role="tabpanel" class="tab-pane" :class="{ active: trabalhoActive }" id="usersettings">
-                            <div class="card">
-
-
-                                <div class="row clearfix">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="card">
-                                            <div class="body">
-                                                <div class="bootstrap snippet">
-                                                    <section id="portfolio" class="gray-bg padding-top-bottom">
-                                                        <!--==== Portfolio Filters ====-->
-                                                        <div class="categories">
-                                                            <ul>
-                                                                <li class="active">
-                                                                    <a href="#" data-filter="*">Todas as categorias</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" data-filter=".web-design">Designer de
-                                                                        Web</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" data-filter=".apps">Apps</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" data-filter=".psd">PSD</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <!-- ======= Portfolio items ===-->
-
-
-
-                                                        <!-- ======= Portfolio items ===-->
-                                                        <div class="projects-container scrollimation in">
-
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                    <div class="card bg-dark">
-                                                                        <div class="body">
-
-                                                                            <div id="aniimated-thumbnials"
-                                                                                class="list-unstyled row clearfix">
-
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item  web-design">
-                                                                                    <a href="assets/images/posts/joferbino.jpg"
-                                                                                        data-sub-html="acesdsar href">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/joferbino.jpg"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                    <p></p>
-                                                                                    <a target="_blank"
-                                                                                        href="http://joferbino.co.ao/"
-                                                                                        class="text-white">ver a
-                                                                                        Pagina</a>
-
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item psd">
-                                                                                    <a href="assets/images/posts/post9.jpg"
-                                                                                        data-sub-html="Demo Description">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/post9.jpg"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item psd">
-                                                                                    <a href="assets/images/posts/joferbino telef.jpg"
-                                                                                        data-sub-html="acesdsar href">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/joferbino telef.jpg"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item psd">
-                                                                                    <a href="assets/images/posts/post6.jpg"
-                                                                                        data-sub-html="acesdsar href">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/post6.jpg"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                    <p></p>
-
-                                                                                </div>
-
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item apps web-design">
-                                                                                    <a href="assets/images/posts/farmacia.jpg"
-                                                                                        data-sub-html="acesdsar href">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/farmacia.jpg"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                </div>
-
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item psd">
-                                                                                    <a href="assets/images/posts/post11.png"
-                                                                                        data-sub-html="acesdsar href">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/post11.png"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                </div>
-
-
-                                                                                <div
-                                                                                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12  portfolio-item psd">
-                                                                                    <a href="assets/images/posts/post3.jpg"
-                                                                                        data-sub-html="Demo Description">
-                                                                                        <img class="img-responsive thumbnail"
-                                                                                            src="assets/images/posts/post3.jpg"
-                                                                                            alt="">
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- #END# Browser Usage -->
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ======= Portfolio items ===-->
+
+    <p-portfolio></p-portfolio>
+
+    <!-- ======= Portfolio items ===-->
+
+    <!-- ======= Habilidade ===-->
+
+    <p-habilidade></p-habilidade>
+
+    <!-- ======= Habilidade ===-->
+
+
+    <!-- ======= Contactos ===-->
+
+    <p-contacto></p-contacto>
+
+    <!-- ======= Contactos ===-->
 </div>

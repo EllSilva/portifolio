@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +13,18 @@
     <!-- Plugins Core Css -->
     <link href="assets/css/app.min.css" rel="stylesheet">
     <!-- Custom Css -->
-    <link href="assets/css/style.css" rel="stylesheet" /> 
-    
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/possicao.css" rel="stylesheet" />
     <link href="assets/css/lightgallery.css" rel="stylesheet">
 
     <script src="./assets/js/app.js" async type="module" defer></script>
-    <script src="./assets/js/app.min.js" async type="module" defer></script>
-    <script src="./assets/js/image-gallery.js" async type="module" defer></script>
-    <script src="./assets/js/portfolio.js" async type="module" defer></script>
+    <script src="./assets/js/vendor/vue.js" ></script>
+    <script src="./assets/js/vendor/manu.js" ></script>
 </head>
+
 <body class="light">
     <div id="app"> 
-         <!-- Page Loader 
+        <!-- Page Loader 
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="m-t-30">
@@ -32,16 +33,16 @@
             <p>Por favor, espere...</p>
         </div>
     </div>-->
-    <!-- #END# Page Loader -->
-    <!-- Overlay For Sidebars -->
+        <!-- #END# Page Loader -->
+        <!-- Overlay For Sidebars -->
 
-    
-               
-    
-    <!-- #Top Bar -->
-    
-    <c-menu></c-menu>
+        <!-- #Top Bar -->
+
+        <c-menu></c-menu>
         <router-view></router-view>
     </div>
+ 
+
 </body>
+
 </html>
