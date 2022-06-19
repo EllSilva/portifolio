@@ -107,14 +107,11 @@ padding: 15px
   right: 2%;
 }
 
-.port_baixo{
-  padding-bottom: 15%;
-}
 
 
 
  /* MEDIA QUERYS */
- @media screen and (min-width: 270px) and (max-width: 504px) {
+ @media screen and (min-width: 270px) and (max-width: 304px) {
 
    .portfolio_item:first-of-type {
      grid-column: 1 / span 2;
@@ -126,7 +123,7 @@ padding: 15px
  }
 
 
- @media screen and (min-width: 505px) and (max-width: 685px) {
+ @media screen and (min-width: 305px) and (max-width: 685px) {
 
    .portfolio_item:nth-of-type(odd) {
      grid-column: 2 / span 2;
