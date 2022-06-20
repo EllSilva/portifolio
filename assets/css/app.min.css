@@ -4589,8 +4589,7 @@ small {
 
 .card {
     position: relative;
-    margin: .5rem 0 1rem 0;
-    background: rgba(255, 255, 255, 0.1) !important;
+    margin: .5rem 0 1rem 0; 
     -webkit-transition: -webkit-box-shadow .25s;
     transition: -webkit-box-shadow .25s;
     transition: box-shadow .25s;
@@ -11173,8 +11172,7 @@ pre code {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
+    color: #495057; 
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -14189,7 +14187,7 @@ input[type="button"].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background: rgba(255, 255, 255, 0.521) !important;
+  
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 15px;

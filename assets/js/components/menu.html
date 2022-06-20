@@ -1,144 +1,89 @@
-
-
-
 <div>
+
+    <div class="botaoEcoder">
+
    
-<div  id="navegation-mobile"  v-if="mobileView">
-    <!-- Left Sidebar -->
-        <div class="nav__toggle" :class="{ iconMostrar: showMostrar }"> 
+
+        <div v-if="ativo" class="nav__toggle" :class="{ iconMostrar: showMostrar }">
             <a @click="mostrarMenu()">
-                <i class="menu-icon ti-hand-point-right"></i>
-                </a>
+                <i class="menu-icon ti-menu"></i>
+            </a>
         </div>
 
-        <div class="nav__toggle" :class="{ iconEsconder: showEsconder }"> 
+        <div v-else class="nav__toggle" :class="{ iconEsconder: showEsconder }">
             <a @click="esconderMenu()">
-                <i class="menu-icon ti-hand-point-left"></i>
-                </a>
+                <i class="menu-icon ti-close"></i>
+            </a>
         </div>
-
-        
-    <aside class="sidebar" :class="{ show: showTrue }">
-  
-
+    </div>
+    <div id="navegation-desktop" v-if="mobileView" :class="{ navegationDesktop: ativo }">
+        <!-- Left Sidebar -->
 
 
-        <!-- Menu -->
-        <div class="menu">
+
+        <aside class="sidebar" :class="{ show: showTrue }">
+
+
+
+
+            <!-- Menu -->
+            <div class="menu">
 
                 <div class="img_center">
-                    <a href="#/" @click="home()" v-if="type">
-                    <img src="assets/images/user/jms.png" class="user-logo" alt=""> 
-                </a> 
+                    <a @click="esconderMenu()" href="#/" @click="home()" v-if="type">
+                        <img src="assets/images/user/jms.png" class="user-logo" alt="">
+                    </a>
 
-                <a href="#/" @click="homeJms()" v-else>
-                    <img src="assets/images/user/logo.png" class="user-logo" alt=""> 
-                </a> 
- 
+                    <a @click="esconderMenu()" href="#/" @click="homeJms()" v-else>
+                        <img src="assets/images/user/logo.png" class="user-logo" alt="">
+                    </a>
 
-                 <div>
+
+                    <div>
                         Web Developer
                     </div>
                     <hr>
                 </div>
 
-              
-
-            <ul class="list" > 
-              
-                        <li :class="{ vertical: portifolioActive }" class="" @click="portifolio()">
-                            <a href="#/portfolio">
-                                <i class="menu-icon ti-briefcase"></i>
-                                <span :class="{ menuTitulo: tituloActive }">Portfolio</span>
-                            </a>
-                        </li>
-                        <li :class="{ vertical: habilidadeActive }" class=""  @click="habilidade()">
-                            <a href="#/habilidade">
-                                <i class="menu-icon ti-microsoft"></i>
-                                <span :class="{ menuTitulo: tituloActive }">Habilidades</span></a>
-                        </li>
-                        <li  :class="{ vertical: contactoActive }" class=""  @click="contacto()">
-                            <a href="#/contacto">
-                                <i class="menu-icon ti-id-badge"></i>
-                                <span :class="{ menuTitulo: tituloActive }">Contacto</span></a>
-                        </li>
-                        <li :class="{ vertical: sobreActive }" class="">
-                            <a href="#/sobre" @click="sobreMi()">
-                                <i class="menu-icon ti-info-alt"></i>
-                                <span :class="{ menuTitulo: tituloActive }">Sobre mi</span></a>
-                        </li>
-                        <li  :class="{ vertical: blogActive }" class=""  @click="blog()">
-                            <a href="#/">
-                                <i class="menu-icon ti-world"></i>
-                                <span :class="{ menuTitulo: tituloActive }">Blog</span></a>
-                        </li>
-                     
-            </ul>
-        </div>
-        <!-- #Menu -->
-    </aside>
-    <!-- #END# Left Sidebar -->
-
-</div>
 
 
-   
-<div  v-if="!mobileView">
-    <!-- Left Sidebar -->
-    <aside class="sidebar">
-        
-        <!-- Menu -->
-        <div class="menu">
+                <ul class="list">
 
-                <div class="img_center">
-                    <a href="#/" @click="home()" v-if="type">
-                    <img src="assets/images/user/jms.png" class="user-logo" alt=""> 
-                </a> 
+                    <li :class="{ vertical: portifolioActive }" class="" @click="portifolio()">
+                        <a @click="esconderMenu()" href="#/portfolio">
+                            <i class="menu-icon ti-briefcase"></i>
+                            <span :class="{ menuTitulo: ativo }">Portfolio</span>
+                        </a>
+                    </li>
+                    <li :class="{ vertical: habilidadeActive }" class="" @click="habilidade()">
+                        <a @click="esconderMenu()" href="#/habilidade">
+                            <i class="menu-icon ti-microsoft"></i>
+                            <span :class="{ menuTitulo: ativo }">Habilidades</span></a>
+                    </li>
+                    <li :class="{ vertical: contactoActive }" class="" @click="contacto()">
+                        <a @click="esconderMenu()" href="#/contacto">
+                            <i class="menu-icon ti-id-badge"></i>
+                            <span :class="{ menuTitulo: ativo }">Contacto</span></a>
+                    </li>
+                    <li :class="{ vertical: sobreActive }" class="">
+                        <a @click="esconderMenu()" href="#/sobre" @click="sobreMi()">
+                            <i class="menu-icon ti-info-alt"></i>
+                            <span :class="{ menuTitulo: ativo }">Sobre mi</span></a>
+                    </li>
+                    <li :class="{ vertical: blogActive }" class="" @click="blog()">
+                        <a @click="esconderMenu()" href="#/">
+                            <i class="menu-icon ti-world"></i>
+                            <span :class="{ menuTitulo: ativo }">Blog</span></a>
+                    </li>
 
-                <a href="#/" @click="homeJms()" v-else>
-                    <img src="assets/images/user/logo.png" class="user-logo" alt=""> 
-                </a> 
- 
+                </ul>
+            </div>
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
 
-                 <div>
-                        Web Developer
-                    </div>
-                    <hr>
-                </div>
-          
+    </div>
 
-            <ul class="list"> 
-              
-                        <li :class="{ vertical: sobreActive }" class="">
-                            <a href="#/sobre" @click="sobreMi()">
-                                <span>Sobre mi</span></a>
-                        </li>
-                        <li  :class="{ vertical: portifolioActive }" class="" @click="portifolio()">
-                            <a href="#/portfolio">
-                                <i class="menu-icon ti-briefcase"></i>
-                                <span>Portfolio</span>
-                            </a>
-                        </li>
-                        <li :class="{ vertical: habilidadeActive }" class=""  @click="habilidade()">
-                            <a href="#/habilidade">
-                                <i class="menu-icon ti-angle-double-right"></i>
-                                <span>Habilidades</span></a>
-                        </li>
-                        <li  :class="{ vertical: contactoActive }" class=""  @click="contacto()">
-                            <a href="#/contacto">
-                                <span>Contacto</span></a>
-                        </li>
-                        <li  :class="{ vertical: blogActive }" class=""  @click="blog()">
-                            <a href="#/">
-                                <span>Blog</span></a>
-                        </li>
-                     
-            </ul>
-        </div>
-        <!-- #Menu -->
-    </aside>
-    <!-- #END# Left Sidebar -->
 
-</div>
 
 </div>

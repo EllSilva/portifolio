@@ -12,8 +12,8 @@ export default {
             type: true,
 
             mobileView: true,
-            showTrue: true,
-            tituloActive: true,
+            showTrue: false,
+            ativo: true,
 
             showEsconder: false,
             showMostrar: true,
@@ -23,7 +23,7 @@ export default {
 
         mostrarMenu() {
             this.showTrue = false
-            this.tituloActive = false
+            this.ativo = false
 
             this.showEsconder = true
             this.showMostrar = false
@@ -32,12 +32,11 @@ export default {
 
         esconderMenu() {
             this.showTrue = true
-            this.tituloActive = true
-
+            this.ativo = true 
             this.showEsconder = false
             this.showMostrar = true
         },
-
+        
 
         home() {
             this.sobreActive = false,
