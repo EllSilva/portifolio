@@ -12,6 +12,12 @@
  }
 
  body,
+
+ .temaBranco{
+    color: #fff;
+ }
+
+
  html {
      background-color: #ffffff;
      -moz-transition: all .5s;
@@ -304,11 +310,6 @@
      }
 
 
-     /*!
- * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0,  Fonts: SIL OFL 1.1,  Code: MIT License)
- */
-
      @font-face {
          font-family: 'Font Awesome 5 Free';
          font-style: normal;
@@ -321,12 +322,6 @@
          font-family: 'Font Awesome 5 Free';
          font-weight: 400;
      }
-
-
-     /*!
- * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0,  Fonts: SIL OFL 1.1,  Code: MIT License)
- */
 
      @font-face {
          font-family: 'Font Awesome 5 Free';
@@ -370,31 +365,6 @@
          padding-right: 15px;
      }
 
-     .feedLblStyle {
-         font-weight: bold;
-         padding: 0 7px 0 7px;
-         border-radius: 10px;
-     }
-
-     .lblFileStyle {
-         color: red;
-         border: 1px solid red;
-     }
-
-     .lblTaskStyle {
-         color: #2ed8b6;
-         border: 1px solid #2ed8b6;
-     }
-
-     .lblCommentStyle {
-         color: #4099ff;
-         border: 1px solid #4099ff;
-     }
-
-     .lblReplyStyle {
-         color: #f15317;
-         border: 1px solid #f15317;
-     }
 
      .text-muted {
          color: #919aa3 !important;
@@ -404,84 +374,7 @@
      .img-100 {
          width: 100px;
      }
-
-     .sl-item {
-         border-left: 1px solid #13b1e0;
-         padding-bottom: 1px;
-         padding-left: 15px;
-         position: relative;
-     }
-
-     .sl-item:last-child::after {
-         border-radius: 100%;
-         bottom: 0;
-         content: "";
-         height: 6px;
-         left: -3px;
-         position: absolute;
-         width: 6px;
-     }
-
-     .sl-item .sl-content i {
-         font-size: 12px;
-     }
-
-     .sl-item .sl-content small {
-         position: relative;
-         top: -4px;
-     }
-
-     .sl-item .sl-content p {
-         padding-bottom: 4px;
-         position: relative;
-     }
-
-     .sl-item::before {
-         background-color: #13b1e0;
-         border-radius: 100%;
-         content: "";
-         height: 12px;
-         left: -6.5px;
-         position: absolute;
-         top: 0;
-         width: 12px;
-     }
-
-     .sl-primary {
-         border-left-color: #2196f3;
-     }
-
-     .sl-primary:last-child::after {
-         background-color: #2196f3;
-     }
-
-     .sl-primary::before {
-         background-color: #2196f3;
-     }
-
-     .sl-danger {
-         border-left-color: #f44336;
-     }
-
-     .sl-danger:last-child::after {
-         background-color: #f44336;
-     }
-
-     .sl-danger::before {
-         background-color: #f44336;
-     }
-
-     .sl-success {
-         border-left-color: #4caf50;
-     }
-
-     .sl-success:last-child::after {
-         background-color: #4caf50;
-     }
-
-     .sl-success::before {
-         background-color: #4caf50;
-     }
+  
 
 
      .bg-c-blue {
@@ -721,69 +614,7 @@
      pointer-events: none;
  }
 
- .form-check .form-check-input:checked+.form-check-sign:before {
-     animation: rippleOn .5s;
- }
-
- .form-check .form-check-input:checked+.form-check-sign .check {
-     background: #9c27b0;
- }
-
- .form-check .form-check-input:checked+.form-check-sign .check:before {
-     color: #fff;
-     box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
-     animation: checkboxOn .3s forwards;
- }
-
- .form-check .form-check-sign {
-     vertical-align: middle;
-     position: relative;
-     top: -2px;
-     float: left;
-     padding-right: 10px;
-     display: inline-block;
- }
-
- .form-check .form-check-sign:before {
-     display: block;
-     position: absolute;
-     left: 0;
-     content: "";
-     background-color: rgba(0, 0, 0, 0.84);
-     height: 20px;
-     width: 20px;
-     border-radius: 100%;
-     z-index: 1;
-     opacity: 0;
-     margin: 0;
-     top: 0;
-     transform: scale3d(2.3, 2.3, 1);
- }
-
- .form-check .form-check-sign .check {
-     position: relative;
-     display: inline-block;
-     width: 20px;
-     height: 20px;
-     border: 1px solid rgba(0, 0, 0, 0.54);
-     overflow: hidden;
-     z-index: 1;
-     border-radius: 3px;
- }
-
- .form-check .form-check-sign .check:before {
-     position: absolute;
-     content: "";
-     transform: rotate(45deg);
-     display: block;
-     margin-top: -3px;
-     margin-left: 7px;
-     width: 0;
-     color: #fff;
-     height: 0;
-     box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
-     animation: checkboxOff .3s forwards;
- }
+ 
 
  .form-control-radious {
      background-color: transparent !important;
@@ -2369,20 +2200,16 @@
  }
 
  .inicio_texte3D {
-     color: #320508;
-     font-size: 80px;
-     font-family: monospace;
-     font-weight: bold;
-     text-shadow:
-         1px -1px 0 #250204,
-         2px -2px 0 #250204,
-         3px -3px 0 #2d5880,
-         4px -4px 0 #2b557c,
-         5px -5px 0 #2a5378,
-
-
-         1px -1px 2px rgba(0, 0, 0, 0.55),
-         1px -1px 1px rgba(0, 0, 0, 0.5);
+     color: #5b979b;  
+  text-transform: uppercase; 
+  text-shadow: 0  2px  0   #8b6e15,
+               0  4px  0   #7c6213,
+               0  6px  0   #6e5611, 
+               0  8px  0   #5f4b0e, 
+               0 10px  0   #503f0c,
+               0 12px  0   #41330a,
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
  }
 
  .inicio_texte {
@@ -2393,14 +2220,10 @@
  }
 
  .inicio_texte2 {
-     font-size: 60px;
+     font-size: 40px;
      font-family: monospace;
      font-weight: bold;
      font-family: "tituloprincipal";
- }
-
- .nome {
-     font-size: 80px;
  }
 
  .jms1 {
@@ -2419,7 +2242,7 @@
  }
 
  .inicio_texteX {
-     color: #320508;
+     color: #5b979b;
      font-size: 40px;
      font-family: monospace;
      font-weight: bold;
@@ -2429,7 +2252,7 @@
 
  .nome_titulo {
      font-size: 60px;
-     color: #320508;
+     color: #5b979b;
      font-family: monospace;
      font-weight: bold;
      font-family: "tituloprincipal";
@@ -2442,7 +2265,7 @@
  }
 
  .botton { 
-    padding: 0px 0px 180px 0px;
+    padding: 0px 0px 80px 0px;
      
 }
  
@@ -2482,7 +2305,7 @@
  }
 
  .btn_jms {
-     background-color: #320508;
+     background-color: #5b979b;
      width: 20%;
      color: #fff;
      border-radius: 25px;
@@ -2492,7 +2315,7 @@
  }
 
  .btn_jms:hover {
-     color: #320508;
+     color: #5b979b;
      background-color: #fff;
  }
 
@@ -2637,15 +2460,13 @@
      transition: 0.5s;
  }
 
- 
-
- 
-
  .fundo {
-     background-image: url(../images/fundo/branco.jpg);
+     background-image: url(../images/fundo/preto.jpg);
  }
 
  .port_baixo{
-    padding-bottom: 15%;
+    padding-bottom: 10%;
   }
-  
+ 
+
+  .botton
