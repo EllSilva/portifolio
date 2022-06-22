@@ -13,13 +13,13 @@
 
  body,
 
- .temaBranco{
-    color: #fff;
+ .temaBranco {
+     color: #fff;
  }
 
 
  html {
-     background-color: #ffffff;
+     background-color: #1b1b1b;
      -moz-transition: all .5s;
      -o-transition: all .5s;
      -webkit-transition: all .5s;
@@ -374,7 +374,7 @@
      .img-100 {
          width: 100px;
      }
-  
+
 
 
      .bg-c-blue {
@@ -614,7 +614,7 @@
      pointer-events: none;
  }
 
- 
+
 
  .form-control-radious {
      background-color: transparent !important;
@@ -1485,12 +1485,12 @@
 
  .categories ul li a:hover {
      color: #fff;
-     background: #1f0103;
+     background: #5b979b;
  }
 
  .categories ul li.active a {
      color: #fff;
-     background: #250204;
+     background: #5b979b;
  }
 
  .projects-container .row {
@@ -2192,7 +2192,7 @@
 
  .inicio {
      padding: 150px 10px 70px 10px;
-     font-size: 60px; 
+     font-size: 60px;
  }
 
  .name-inicio {
@@ -2200,16 +2200,16 @@
  }
 
  .inicio_texte3D {
-     color: #5b979b;  
-  text-transform: uppercase; 
-  text-shadow: 0  2px  0   #8b6e15,
-               0  4px  0   #7c6213,
-               0  6px  0   #6e5611, 
-               0  8px  0   #5f4b0e, 
-               0 10px  0   #503f0c,
-               0 12px  0   #41330a,
-              3px 8px 15px rgba(0,0,0,0.1),
-              3px 8px  5px rgba(0,0,0,0.3);
+     color: #5b979b;
+     text-transform: uppercase;
+     text-shadow: 0 2px 0 #8b6e15,
+         0 4px 0 #7c6213,
+         0 6px 0 #6e5611,
+         0 8px 0 #5f4b0e,
+         0 10px 0 #503f0c,
+         0 12px 0 #41330a,
+         3px 8px 15px rgba(0, 0, 0, 0.1),
+         3px 8px 5px rgba(0, 0, 0, 0.3);
  }
 
  .inicio_texte {
@@ -2260,19 +2260,19 @@
 
  .subtitulo {
      font-size: 20px;
-     animation: zoomIn; 
-      
+     animation: zoomIn;
+
  }
 
- .botton { 
-    padding: 0px 0px 80px 0px;
-     
-}
- 
-.top { 
-    padding: 50px 15px 0px 40px;
-     
-}
+ .botton {
+     padding: 0px 0px 80px 0px;
+
+ }
+
+ .top {
+     padding: 50px 15px 0px 40px;
+
+ }
 
  .xl {
      transition: 0.5s;
@@ -2355,32 +2355,48 @@
 
 
  @media screen and (min-width: 260px) and (max-width: 1201px) {
-     
- .sidebar {
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    font-family: "Poppins", sans-serif;
-    background: #fff;
-    width: 100%;
-    overflow: hidden;
-    display: inline-block;
-    position: fixed !important;
-    top: 0px;
-    left: 0;
-    z-index: 1030 !important;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 6px 4px 30px 0px rgb(0, 0, 0, 0.25);
-    height: 100%;
 
-}
+     .sidebar {
+         -moz-transition: all .5s;
+         -o-transition: all .5s;
+         -webkit-transition: all .5s;
+         transition: all .5s;
+         font-family: "Poppins", sans-serif;
+         background: rgb(255, 255, 255);
+         width: 100%;
+         overflow: hidden;
+         display: inline-block;
+         position: fixed !important;
+         top: 0px;
+         left: 0;
+         z-index: 1030 !important;
+         border-radius: 0 20px 20px 0;
+         box-shadow: 6px 4px 30px 0px rgb(0, 0, 0, 0.25);
+         height: 100%;
 
-.vertical {
-    transform: rotate(0deg);
-   
-}
-      
+     }
+
+     .h_habilidade {
+         align-items: center;
+         align-content: center;
+         justify-content: center;
+         justify-items: center;
+         text-align: center;
+     }
+
+     .h_foto {
+         width: 80%;
+     }
+
+     .btn_menu {
+         color: #fff;
+     }
+
+     .vertical {
+         transform: rotate(0deg);
+
+     }
+
      .show {
          width: 0px !important;
      }
@@ -2388,39 +2404,40 @@
      .navegationDesktop {
          visibility: hidden;
      }
+
      .top {
-        padding: 50px 0px 0px 40px;
-    }
-
-    section.content {
-        margin: 0px 0px 0 0px; 
-    }
-
-     .list {
-        text-align: center;
-        
-    }
-
-
-     .botaoEcoder{
-        position: fixed;
-        top: 0rem;
-        width: 40px;
-        height: 35px; 
-        border-radius: 5px;
-        font-size: 2rem;
-        color: rgb(11, 10, 10); 
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: 0.5s; 
-        float: right;
-        right: 0rem;
-
-        z-index: 1034 !important;
+         padding: 50px 0px 0px 40px;
      }
 
-    
+     section.content {
+         margin: 0px 0px 0 0px;
+     }
+
+     .list {
+         text-align: center;
+
+     }
+
+
+     .botaoEcoder {
+         position: fixed;
+         top: 0rem;
+         width: 40px;
+         height: 35px;
+         border-radius: 5px;
+         font-size: 2rem;
+         color: rgb(11, 10, 10);
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+         transition: 0.5s;
+         float: right;
+         right: 0rem;
+
+         z-index: 1034 !important;
+     }
+
+
      .nome_titulo {
          font-size: 35px;
      }
@@ -2445,13 +2462,13 @@
          font-size: 20px;
      }
 
-     .btn_jms{
-        width: 80%;
+     .btn_jms {
+         width: 80%;
      }
 
      .subtitulo {
-     font-size: 13px;
- }
+         font-size: 13px;
+     }
 
  }
 
@@ -2464,9 +2481,6 @@
      background-image: url(../images/fundo/preto.jpg);
  }
 
- .port_baixo{
-    padding-bottom: 10%;
-  }
- 
-
-  .botton
+ .port_baixo {
+     padding-bottom: 10%;
+ }
