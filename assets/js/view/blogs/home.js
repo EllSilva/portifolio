@@ -25,5 +25,5 @@ export default {
  
     },
     
-    template: await get_template('./assets/js/view/contacto/home')
+    template: await get_template('./assets/js/view/blogs/home')
 }

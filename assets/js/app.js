@@ -21,6 +21,9 @@ Vue.component('p-habilidade', page_habilidade)
 import page_contacto from './view/contacto/home.js'
 Vue.component('p-contacto', page_contacto)
 
+import page_blogs from './view/blogs/home.js'
+Vue.component('p-blogs', page_blogs)
+
 Vue.use(Router)
 
 const routes = [
@@ -28,8 +31,9 @@ const routes = [
     { path: '/sobre', component: { template: '<p-sobre></p-sobre>' } },
     { path: '/portfolio', component: { template: '<p-portfolio></p-portfolio>' } },
     { path: '/habilidade', component: { template: '<p-habilidade></p-habilidade>' } },
-    { path: '/contacto', component: { template: '<p-contacto></p-contacto>' } }
-
+    { path: '/contacto', component: { template: '<p-contacto></p-contacto>' } },
+    { path: '/blogs', component: { template: '<p-blogs></p-blogs>' } }
+    
 ]
 
 const router = new Router({ routes })
