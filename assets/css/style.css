@@ -2132,59 +2132,6 @@
      width: 90%
  }
 
- section.contact ul.list-social {
-     margin-bottom: 0
- }
-
- section.contact ul.list-social li a {
-     font-size: 20px;
-     line-height: 40px;
-     display: block;
-     width: 40px;
-     height: 40px;
-     color: #fff;
-     border-radius: 100%
- }
-
- section.contact ul.list-social li.social-twitter a {
-     background-color: #1da1f2
- }
-
- section.contact ul.list-social li.social-twitter a:hover {
-     background-color: #0d95e8
- }
-
- section.contact ul.list-social li.social-facebook a {
-     background-color: #3b5998
- }
-
- section.contact ul.list-social li.social-facebook a:hover {
-     background-color: #344e86
- }
-
- section.contact ul.list-social li.social-whatsapp a {
-     background-color: #25D366
- }
-
- section.contact ul.list-social li.social-whatsapp a:hover {
-     background-color: #15b450
- }
-
- section.contact ul.list-social li.social-instagra a {
-     background-color: #e4405f
- }
-
- section.contact ul.list-social li.social-instagra a:hover {
-     background-color: #b13b51
- }
-
- section.contact ul.list-social li.social-linkedIn a {
-     background-color: #0e76a8
- }
-
- section.contact ul.list-social li.social-linkedIn a:hover {
-     background-color: #073b53
- }
 
  .name-center {
      font-size: 20px;
@@ -2486,3 +2433,4 @@
  }
 
  #mapid { height: 600px; }
+
