@@ -17,38 +17,34 @@
     <link href="assets/css/possicao.css" rel="stylesheet" />
     <link href="assets/css/social.css" rel="stylesheet" />
     <link href="assets/css/lightgallery.css" rel="stylesheet">
+    <link href="assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-   
+
 
     <script src="./assets/js/app.js" async type="module" defer></script>
     <script src="./assets/js/vendor/vue.js"></script>
     <script src="./assets/js/vendor/manu.js"></script>
+    <script src="./assets/js/vendor/stilo.js"></script>
 </head>
- 
 
-<body class="light fundo">
+
+<body class="light">
+
     <div id="app">
-        <!-- Page Loader 
-    <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="m-t-30">
-                <img class="loading-img-spin" src="assets/images/loading.png" alt="admin">
+        <div id="fundo" class="fundo">
+            <c-menu></c-menu>
+
+            <div class="jms">
+                <router-view></router-view>
             </div>
-            <p>Por favor, espere...</p>
         </div>
-    </div>-->
-        <!-- #END# Page Loader -->
-        <!-- Overlay For Sidebars -->
 
-        <!-- #Top Bar -->
-
-        <c-menu></c-menu>
-    <div class="jms">
-        <router-view></router-view>
-</div>
     </div>
-
-
 </body>
+
+
+<script>
+ 
+</script>
 
 </html>

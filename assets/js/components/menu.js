@@ -17,9 +17,25 @@ export default {
 
             showEsconder: false,
             showMostrar: true,
+
+             showDia: false,
+            showNoite:  true,
         }
     },
+    
     methods: {
+
+        
+        deNoite() { 
+            this.showDia = true
+            this.showNoite = false
+
+        },
+
+        deDia() { 
+            this.showDia = false
+            this.showNoite = true
+        },
 
         mostrarMenu() {
             this.showTrue = false

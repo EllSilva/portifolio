@@ -1,8 +1,48 @@
 <div class="temaBranco">
+    <div class="botaoCorTema">
+       
+        
+        <section class="text-center">
+            <div class="container">
+
+
+                <ul class="list-inline list-social">
+                   
+                    <li class="list-inline-item social-linkedIn" >
+                        <a target="_blank" class="iconJms"
+                            href="https://www.linkedin.com/in/o-peregrino-de-cristo-66287a215/">
+                            <i class="fa-brands fa-linkedin fa-sm"></i></a>
+                    </li>
+
+                    <li class="list-inline-item ">
+                        <a target="_blank" class="iconJms"
+                            href="https://www.linkedin.com/in/o-peregrino-de-cristo-66287a215/">
+                            <i class="fa-brands fa-github fa-sm"></i></a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <div v-if="showNoite" class="nav__toggle " style="color: #f49e12" :class="{ iconMostrar: showNoite }">
+                            <a @click="deNoite()">
+                                <i class="fa-solid fa-sun fa-sm"></i>
+                            </a>
+                        </div>
+                
+                        <div v-if="showDia" class="nav__toggle btn_menu" style="color: #f49e12" :class="{ iconEsconder: showDia }">
+                            <a @click="deDia()">
+                                <i class="fa-solid fa-moon fa-sm"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+       
+
+      
+    </div>
 
     <div class="botaoEcoder">
-
-   
 
         <div v-if="ativo" class="nav__toggle btn_menu" :class="{ iconMostrar: showMostrar }">
             <a @click="mostrarMenu()">
@@ -16,6 +56,7 @@
             </a>
         </div>
     </div>
+
     <div id="navegation-desktop" v-if="mobileView" :class="{ navegationDesktop: ativo }">
         <!-- Left Sidebar -->
 
