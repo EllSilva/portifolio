@@ -2490,3 +2490,7 @@
     transition: opacity 0.4s, transform 0.9s;
     transition: opacity 0.4s, transform 0.9s, -webkit-transform 0.9s;
 }
+
+.p{
+    color: #DC3545;  
+  }

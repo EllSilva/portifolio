@@ -23,21 +23,40 @@
                                             <div class="cardJms">
 
                                                 <div class="body">
+                                                    <form @submit="enviar" method="post" novalidate="true"> 
                                                     <div class="form-group focused">
-                                                        <input type="text" class="form-control" placeholder="Nome">
+                                                        <input type="text" class="form-control" v-model="nome" placeholder="Nome">
+                                                        <p v-if="erro_nome.length"> 
+                                                            <div>
+                                                                <div class="p" v-for="error in erro_nome">{{ error }}</div>
+                                                            </div>
+                                                            </p>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control" placeholder="E-mail">
+                                                        <input type="email" class="form-control" v-model="email" placeholder="E-mail">
+                                                        <p v-if="erro_email.length"> 
+                                                            <div>
+                                                                <div class="p" v-for="error in erro_email">{{ error }}</div>
+                                                            </div>
+                                                            </p>
                                                     </div>
                                                     <div class="form-group focused">
-                                                        <input type="text" class="form-control" placeholder="Assunto">
+                                                        <input type="text" class="form-control" v-model="assunto" placeholder="Assunto">
+                                                        <p v-if="erro_assunto.length"> 
+                                                            <div>
+                                                                <div class="p" v-for="error in erro_assunto">{{ error }}</div>
+                                                            </div>
+                                                            </p>
                                                     </div>
                                                     <div class="form-group">
-                                                        <textarea rows="4" class="form-control no-resize"
+                                                        <textarea rows="4" class="form-control no-resize" v-model="mensagem"
                                                             placeholder="Message"></textarea>
-                                                    </div>
-
-                                                    
+                                                            <p v-if="erro_mensagem.length"> 
+                                                                <div>
+                                                                    <div class="p" v-for="error in erro_mensagem">{{ error }}</div>
+                                                                </div>
+                                                                </p>
+                                                    </div> 
                                                         <div class="form-group">
                                                             <div class="form-check m-l-10">
                                                                 <label class="form-check-label">
@@ -52,6 +71,8 @@
                                                         </div>
   
                                                     <button class="btn btn-info btn-round">Enviar mensagem!</button>
+                                                </form>
+                                             
                                                 </div>
                                             </div>
 
