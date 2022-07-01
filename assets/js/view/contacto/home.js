@@ -35,8 +35,8 @@ export default {
                 this.erro_assunto.push('O assunto é obrigatório.');
                 this.erro.push('erro');
             }
-            if (!this.selet_mensagem) {
-                this.erro_mensagem.push('O mensagem é obrigatório.');
+            if (!this.mensagem) {
+                this.erro_mensagem.push('A mensagem é obrigatório.');
                 this.erro.push('erro');
             }
  
