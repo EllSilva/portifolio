@@ -1,5 +1,5 @@
 <div class="port_baixo">
-     
+
     <div class="portifolio">
         <div class="lbox" id="teste">
             <div class="box-img">
@@ -7,7 +7,7 @@
                 <img src="assets/images/teste/pagina-1.png">
                 <a href="#teste1" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
             </div>
-        </div> 
+        </div>
         <div class="lbox" id="teste1">
             <div class="box-img">
                 <a href="#teste" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
@@ -24,18 +24,7 @@
                 <a href="#teste3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
             </div>
         </div>
-     
-        <div class="lbox" id="teste3">
-            <div class="box-img">
-                <a href="#teste2" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/teste/pagina-5.png"> 
-            </div>
-        </div>
-       
 
-
-        
     </div>
 
 
@@ -48,7 +37,7 @@
             </div>
         </div>
 
-      
+
         <div class="lbox" id="joferbino2">
             <div class="box-img">
                 <a href="#joferbino1" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
@@ -64,22 +53,22 @@
                 <img src="assets/images/joferbino/joferbino-3.png">
                 <a href="#joferbino4" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
             </div>
-        </div> 
+        </div>
         <div class="lbox" id="joferbino4">
             <div class="box-img">
                 <a href="#joferbino3" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
                 <a href="#/portfolio" class="btn2" id="close">X</a>
                 <img src="assets/images/joferbino/joferbino-6.png">
-             </div>
-        </div> 
+            </div>
+        </div>
     </div>
 
 
     <div class="portifolio">
-        
+
         <div class="lbox" id="doar2">
             <div class="box-img">
-                 <a href="#/portfolio" class="btn2" id="close">X</a>
+                <a href="#/portfolio" class="btn2" id="close">X</a>
                 <img src="assets/images/doardigital/doar2.png">
                 <a href="#doar3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
             </div>
@@ -91,43 +80,14 @@
                 <img src="assets/images/doardigital/doar3.png">
                 <a href="#doar4" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
             </div>
-        </div> 
+        </div>
         <div class="lbox" id="doar4">
             <div class="box-img">
                 <a href="#doar3" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
                 <a href="#/portfolio" class="btn2" id="close">X</a>
                 <img src="assets/images/doardigital/doar6.png">
-             </div>
-        </div> 
-    </div>
-
-
-    
-
-    <div class="portifolio">
-        
-        <div class="lbox" id="logo1">
-            <div class="box-img">
-                 <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/ps/edson2.png">
-                <a href="#logo2" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
             </div>
         </div>
-        <div class="lbox" id="logo2">
-            <div class="box-img">
-                <a href="#logo1" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/ps/edson.png">
-                <a href="#logo3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
-            </div>
-        </div> 
-        <div class="lbox" id="logo3">
-            <div class="box-img">
-                <a href="#logo2" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/ps/edsonfundo.png">
-             </div>
-        </div> 
     </div>
 
 
@@ -149,7 +109,7 @@
                                 <br> Eu fiz tudo isso junto com pessoas incríveis de empresas ao redor do
                                 mundo.
                             </p>
- 
+
                         </div>
                     </div>
                 </div>
@@ -158,113 +118,114 @@
     </section>
 
     <section class="content">
-  
-
-        <div class="body"> 
-                <section id="portfolio" class="gray-bg padding-top-bottom">
-                    <!--==== Portfolio Filters ====-->
-                    <div class="categories">
-                        <ul>
-                            <li :class="{ active: todos }">
-                                <a href="#" @click="todas()">Todas as categorias</a>
-                            </li>
-                            <li :class="{ active: webX }">
-                                <a href="#" @click="web()">Designer de Web</a>
-                            </li>
-                            <li :class="{ active: appX }">
-                                <a href="#" @click="app()">Apps</a>
-                            </li>
-                            <li :class="{ active: psdX }">
-                                <a href="#" @click="psd()">PSD</a>
-                            </li>
-                        </ul>
-                    </div>
 
 
+        <div class="body">
+            <section id="portfolio" class="gray-bg padding-top-bottom">
+                <!--==== Portfolio Filters ====-->
+                <div class="categories">
+                    <ul>
+                        <li :class="{ active: todos }">
+                            <a href="#" @click="todas()">Todas as categorias</a>
+                        </li>
+                        <li :class="{ active: webX }">
+                            <a href="#" @click="web()">Designer de Web</a>
+                        </li>
+                        <li :class="{ active: appX }">
+                            <a href="#" @click="app()">Apps</a>
+                        </li>
+                        <li :class="{ active: psdX }">
+                            <a href="#" @click="psd()">PSD</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <!-- ======= Portfolio items ===-->
-                    <div class="projects-container scrollimation in">
-                        
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="">
-                                   
-                                        <div class="row ">
-                                            <main class="galeria">
 
-                                                <div class="portfolio_item "
-                                                    v-if="jms === 'web' || jms === 'todos'">
-                                                    <a href="#teste"> 
-                                                    <img class="foto" src="assets/images/teste/pagina-1.png"> 
-                                                </a>
 
-                                                </div>
-                                                <div class="portfolio_item"
-                                                    v-if="jms === 'psd' || jms === 'todos'">
-                                                        <a href="#joferbino1"> 
-                                                    <img class="" src="assets/images/joferbino.jpg">
-                                                       </a>
+                <!-- ======= Portfolio items ===-->
+                <div class="projects-container scrollimation in">
 
-                                                </div>
-                                                <div class="portfolio_item"
-                                                    v-if="jms === 'psd' || jms === 'todos'">
-                                                        <a href="#joferbino3"> 
-                                                    <img class="" src="assets/images/03.jpg">
-                                                       </a>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="">
 
-                                                </div>
-                                                <div class="portfolio_item"
-                                                    v-if="jms === 'psd' || jms === 'todos'">
-                                                        <a href="#joferbino4"> 
-                                                    <img class="" src="assets/images/04.jpg">
-                                                       </a>
-                                                </div>
+                                <div class="row ">
+                                    <main class="galeria">
 
-                                                <div class="portfolio_item"
-                                                    v-if="jms === 'web' || jms === 'todos'">
-                                                        <a href="#joferbino5"> 
-                                                    <img class="" src="assets/images/05.jpg">
-                                                       </a>
-                                                </div>
+                                        <div class="portfolio_item " v-if="jms === 'web' || jms === 'todos'">
+                                            <a href="#teste">
+                                                <img class="foto" src="assets/images/teste/pagina-1.png">
+                                            </a>
 
-                                                <div class="portfolio_item"
-                                                    v-if="jms === 'app' || jms === 'todos'">
-                                                        <a href="#doar2"> 
-                                                    <img class="" src="assets/images/doardigital.jpg">
-                                                       </a>
-                                                </div>
-
-                                                <div class=" portfolio_item"
-                                                    v-if="jms === 'psd' || jms === 'todos'">
-                                                        <a href="#joferbino7"> 
-                                                    <img class="" src="assets/images/07.jpg">
-                                                       </a>
-                                                </div>
-                                                
-                                            <div class="portfolio_item"
-                                                v-if="jms === 'app' || jms === 'todos'">
-                                                    <a href="#joferbino8"> 
-                                                <img class="" src="assets/images/06.jpg">
-                                                   </a>
-                                            </div>
-
-                                            <div class=" portfolio_item"
-                                                v-if="jms === 'psd' || jms === 'todos'">
-                                                    <a href="#logo1"> 
-                                                <img class="" src="assets/images/edsonfundo.png">
-                                                   </a>
-                                            </div>
-
-                                            </main>
                                         </div>
-                                
-                                </div>
-                            </div>
+                                        <div class="portfolio_item" v-if="jms === 'psd' || jms === 'todos'">
+                                            <a href="#joferbino1">
+                                                <img class="" src="assets/images/joferbino.jpg">
+                                            </a>
 
+                                        </div>
+
+
+                                        <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
+                                            <a href="#doar2">
+                                                <img class="" src="assets/images/doardigital.jpg">
+                                            </a>
+                                          
+                                        </div>
+
+
+                                        <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
+                                            <a>
+                                                <div class="pro">
+                                                    <div class="breve">
+                                                        <p>EM BREVE</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
+                                            <a>
+                                                <div class="pro">
+                                                    <div class="breve">
+                                                        <p>EM BREVE</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
+                                            <a>
+                                                <div class="pro">
+                                                    <div class="breve">
+                                                        <p>EM BREVE</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+ 
+                                         <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
+                                            <a>
+                                                <div class="pro">
+                                                    <div class="breve">
+                                                        <p>EM BREVE</p>
+                                                    </div>
+                                      
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+                                    </main>
+                                </div>
+
+                            </div>
                         </div>
+
                     </div>
-                </section> 
-        
-    </div>
-</section>
+                </div>
+            </section>
+
+        </div>
+    </section>
 </div>
