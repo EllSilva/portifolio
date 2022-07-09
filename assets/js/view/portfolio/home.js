@@ -9,11 +9,18 @@ export default {
             appX: false,
             psdX: false,
             portifolio: true,
-            n_site: null
+            n_site: null,
+            kim: "kim0",
+            teste: "teste0",
+            joferbino: "joferbino0",
+            doar: "doar0",
         }
     },
 
     methods: {
+
+        kim() { 
+        },
 
         todas() {
             this.jms = "todos",

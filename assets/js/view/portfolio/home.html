@@ -1,94 +1,307 @@
 <div class="port_baixo">
 
     <div class="portifolio">
-        <div class="lbox" id="teste">
-            <div class="box-img">
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/teste/pagina-1.png">
-                <a href="#teste1" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
-            </div>
-        </div>
-        <div class="lbox" id="teste1">
-            <div class="box-img">
-                <a href="#teste" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/teste/pagina-2.png">
-                <a href="#teste2" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
-            </div>
-        </div>
-        <div class="lbox" id="teste2">
-            <div class="box-img">
-                <a href="#teste1" class="btn2" id="prev"> <i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/teste/pagina-4.png">
-                <a href="#teste3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
-            </div>
-        </div>
+        <div class="row lbox" id="jms">
+            <a href="#/portfolio" class="btn2" id="close">X</a>
+            <div class="col-lg-9 col-md-12">
 
+                <div class="tamanhoCard">
+
+                    <div class="box-img" v-if="kim === 'kim0'">
+                        <div class="img jms1">
+                        </div>
+                        <a @click="kim = 'kim1'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="kim === 'kim1'">
+                        <a @click="kim = 'kim0'" class="btn2" id="prev"><i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img jms2">
+                        </div>
+                        <a @click="kim = 'kim2'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="kim === 'kim2'">
+                        <a @click="kim = 'kim1'" class="btn2" id="prev"> <i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <img class="tamanhoImg" src="assets/images/jms/jms4.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+                <div class="body subtitulo baixa">
+                    <div class="left-timeline">
+                        <time class="left-time port_baixo" datetime="2017-10-22T12:13">
+                            <span>3 anos atrás</span></time>
+                        <blockquote>
+                            <h5>- Tecnologia </h5>
+                            <p class="blockquote blockquote-primary">
+                                "Javascript"
+                                <br>
+                                "Vue.js"
+                                <br>
+                                "Html"
+                                <br>
+                            </p>
+
+                        </blockquote>
+                        <p>
+                            Meu primeiro projecto desenvolvido com as novas tecnologia front,
+                            com muito amor e paixao
+                        </p>
+
+                        <h5>- actor </h5>
+                        <p class="blockquote blockquote-primary">
+                            "Joaquim Silva"
+                            <br>
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="https://github.com/" class="footer">
+                <p class="footer-texte">
+                    Visitar o Site
+                </p>
+            </a>
+
+        </div>
     </div>
 
 
     <div class="portifolio">
-        <div class="lbox" id="joferbino1">
-            <div class="box-img">
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/joferbino/joferbino-1.png">
-                <a href="#joferbino2" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+        <div class="row lbox" id="teste">
+            <a href="#/portfolio" class="btn2" id="close">X</a>
+            <div class="col-lg-10 col-md-12">
+
+                <div class="tamanhoCard">
+
+                    <div class="box-img" v-if="teste === 'teste0'">
+                        <img src="assets/images/teste/pagina-1.png">
+                        <a @click="teste = 'teste1'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="teste === 'teste1'">
+                        <a @click="teste = 'teste0'" class="btn2" id="prev"><i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <img src="assets/images/teste/pagina-3.png">
+                        <a @click="teste = 'teste2'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="teste === 'teste2'">
+                        <a @click="teste = 'teste1'" class="btn2" id="prev"> <i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <img src="assets/images/teste/pagina-4.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-12">
+                <div class="body subtitulo baixa">
+                    <div class="left-timeline">
+                        <time class="left-time port_baixo" datetime="2017-10-22T12:13">
+                            <span>1 anos atrás</span></time>
+                        <blockquote>
+                            <h5>- Tecnologia </h5>
+                            <p class="blockquote blockquote-primary">
+                                "Javascript"
+                                <br>
+                                "Vue.js"
+                                <br>
+                                "Html"
+                                <br>
+                                css
+                                <small>
+                                    - joaquim
+                                </small>
+                            </p>
+                            <p>
+                                Site desenvolvido para empresa joferbino ( prestação de serviço )
+                            </p>
+                            <h5>- actor </h5>
+                            <p class="blockquote blockquote-primary">
+                                "Joaquim Silva"
+                                <br>
+
+                            </p>
+
+                        </blockquote>
+
+                    </div>
+
+                </div>
             </div>
         </div>
 
-
-        <div class="lbox" id="joferbino2">
-            <div class="box-img">
-                <a href="#joferbino1" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/joferbino/joferbino-2.png">
-                <a href="#joferbino3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
-            </div>
-        </div>
-        <div class="lbox" id="joferbino3">
-            <div class="box-img">
-                <a href="#joferbino2" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/joferbino/joferbino-3.png">
-                <a href="#joferbino4" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
-            </div>
-        </div>
-        <div class="lbox" id="joferbino4">
-            <div class="box-img">
-                <a href="#joferbino3" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/joferbino/joferbino-6.png">
-            </div>
-        </div>
     </div>
+
 
 
     <div class="portifolio">
+        <div class="row lbox" id="joferbino1">
+            <a href="#/portfolio" class="btn2" id="close">X</a>
+            <div class="col-lg-9 col-md-12">
 
-        <div class="lbox" id="doar2">
-            <div class="box-img">
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/doardigital/doar2.png">
-                <a href="#doar3" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+                <div class="tamanhoCard">
+
+                    <div class="box-img" v-if="joferbino === 'joferbino0'">
+                        <div class="img jof1">
+                        </div>
+                        <a @click="joferbino = 'joferbino1'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="joferbino === 'joferbino1'">
+                        <a @click="joferbino = 'joferbino0'" class="btn2" id="prev"><i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img jof2">
+                        </div>
+                        <a @click="joferbino = 'joferbino2'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="joferbino === 'joferbino2'">
+                        <a @click="joferbino = 'joferbino1'" class="btn2" id="prev"> <i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img jof3">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="lbox" id="doar3">
-            <div class="box-img">
-                <a href="#doar2" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/doardigital/doar3.png">
-                <a href="#doar4" class="btn2" id="next"> <i class="menu-icon ti-angle-double-right"></i></a>
+
+            <div class="col-lg-3 col-md-12">
+                <div class="body subtitulo baixa">
+                    <div class="left-timeline">
+                        <time class="left-time port_baixo" datetime="2017-10-22T12:13">
+                            <span>1 anos atrás</span></time>
+                        <blockquote>
+                            <h5>- Tecnologia </h5>
+                            <p class="blockquote blockquote-primary">
+                                "Javascript"
+                                <br>
+                                "Vue.js"
+                                <br>
+                                "Html"
+                                <br>
+                                css
+                            </p>
+
+                        </blockquote>
+                        <p>
+                            Site desenvolvido para empresa joferbino ( prestação de serviço )
+                        </p>
+                        <h5>- actor </h5>
+                        <p class="blockquote blockquote-primary">
+                            "Joaquim Silva"
+                            <br>
+
+                        </p>
+
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="lbox" id="doar4">
-            <div class="box-img">
-                <a href="#doar3" class="btn2" id="prev"><i class="menu-icon ti-angle-double-left"></i></a>
-                <a href="#/portfolio" class="btn2" id="close">X</a>
-                <img src="assets/images/doardigital/doar6.png">
-            </div>
+
+            <a href="https://github.com/" class="footer">
+                <p class="footer-texte">
+
+                    Visitar o Site
+                </p>
+            </a>
+
         </div>
     </div>
+
+    <div class="portifolio">
+        <div class="row lbox" id="doar2">
+            <a href="#/portfolio" class="btn2" id="close">X</a>
+            <div class="col-lg-9 col-md-12">
+
+                <div class="tamanhoCard">
+
+                    <div class="box-img" v-if="doar === 'doar0'">
+                        <div class="img doar1">
+                        </div>
+                        <a @click="doar = 'doar1'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="doar === 'doar1'">
+                        <a @click="doar = 'doar0'" class="btn2" id="prev"><i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img doar2">
+                        </div>
+                        <a @click="doar = 'doar2'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="doar === 'doar2'">
+                        <a @click="doar = 'doar1'" class="btn2" id="prev"> <i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img doar3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+                <div class="body subtitulo baixa">
+                    <div class="left-timeline">
+                        <time class="left-time port_baixo" datetime="2017-10-22T12:13">
+                            <span>2 anos atrás</span></time>
+                        <blockquote>
+                            <h5>- Tecnologia </h5>
+                            <p class="blockquote blockquote-primary">
+                                "Javascript"
+                                <br>
+                                "Vue.js"
+                                <br>
+                                "Html"
+                                <br>
+                                "PHP"
+                            </p>
+
+                        </blockquote>
+                        <p>
+                            Site desenvolvido para empresa Digital Combo
+                            <br>
+                            Um dos Projeto mas desafiador onde tive o portunidade em trabalhar e
+                            colaborar com pessoas talentosas para Criação do sistema doardigital
+                            <br>
+                        </p>
+                        <h5>- Trabalhei na area do front-end</h5>
+                        <p class="blockquote blockquote-primary">
+                            "Joaquim Silva"
+                            <br>
+
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="https://github.com/" class="footer">
+                <p class="footer-texte">
+                    Visitar o Site
+                </p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
 
 
     <section class="content">
@@ -151,16 +364,23 @@
 
                                 <div class="row ">
                                     <main class="galeria">
+                                        <div class="portfolio_item " v-if="jms === 'web' || jms === 'todos'">
+                                            <a href="#jms">
+                                                <img class="img foto" src="assets/images/jms.png">
+                                            </a>
+
+                                        </div>
+
 
                                         <div class="portfolio_item " v-if="jms === 'web' || jms === 'todos'">
                                             <a href="#teste">
-                                                <img class="foto" src="assets/images/teste/pagina-1.png">
+                                                <img class="img foto" src="assets/images/pagina-1.png">
                                             </a>
 
                                         </div>
                                         <div class="portfolio_item" v-if="jms === 'psd' || jms === 'todos'">
                                             <a href="#joferbino1">
-                                                <img class="" src="assets/images/joferbino.jpg">
+                                                <img class="img " src="assets/images/joferbino.jpg">
                                             </a>
 
                                         </div>
@@ -168,9 +388,9 @@
 
                                         <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
                                             <a href="#doar2">
-                                                <img class="" src="assets/images/doardigital.jpg">
+                                                <img class="img " src="assets/images/doardigital.jpg">
                                             </a>
-                                          
+
                                         </div>
 
 
@@ -203,14 +423,14 @@
                                                 </div>
                                             </a>
                                         </div>
- 
-                                         <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
+
+                                        <div class="portfolio_item" v-if="jms === 'app' || jms === 'todos'">
                                             <a>
                                                 <div class="pro">
                                                     <div class="breve">
                                                         <p>EM BREVE</p>
                                                     </div>
-                                      
+
                                                 </div>
                                             </a>
                                         </div>

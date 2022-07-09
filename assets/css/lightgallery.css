@@ -1,18 +1,18 @@
  *,
  *::before,
  *::after {
-   margin: 0;
-   padding: 0;
+   margin: 0px;
+   padding: 0px;
    box-sizing: border-box;
  }
 
  .bg-jms {
    /* background-color: #250204 !important*/
-  background-color: #250204 !important;  
- padding-bottom: 7%;
-}
+   background-color: #250204 !important;
+   padding-bottom: 7%;
+ }
 
- img {
+ .img {
    width: 100%;
    height: 100%;
    object-fit: cover;
@@ -22,7 +22,7 @@
    width: 100%;
    max-width: 100%;
    margin-left: auto;
-   margin-right: auto; 
+   margin-right: auto;
    display: grid;
    grid-template-columns: repeat(auto-fit, 133px);
    grid-auto-rows: 200px;
@@ -36,7 +36,7 @@
    /*266px + 17px = 283px* */
    height: 283px;
    transition: 0.5s filter;
-   
+
  }
 
  .portfolio_item:hover {
@@ -47,70 +47,209 @@
    grid-column: 2 / span 2;
  }
 
-.lbox{
-     /*   visibility: hidden; */
-  display: none;
-  opacity: 0;
-}
+ .lbox {
+   /*   visibility: hidden; */
+   display: none;
+   opacity: 0;
+   padding: 0px 100px 0px 100px !important;
+ }
 
-.lbox:target{
+ .baixa {
+   padding: 100px 10px 0px 0px !important;
+ }
+
+ .lbox:target {
    /*   visibility: visible */
-  display: flex;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(10, 10, 10, .7);
-  position: fixed;
-  z-index: 19999;
-}
+   display: flex;
+   opacity: 1;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(10, 10, 10, .9);
+   position: fixed;
+   z-index: 19999;
+ }
 
-.box-img{
+ .tamanhoCard {
+   height: 90%;
+   max-width: 90%;
+   top: 0%;
+   left: 0%;
+ }
 
-  margin: 50px auto; 
-}
+ .footer {
+   margin-left: -85px;
+   width: 100%;
+   height: 80px;
+   background-color: #5b979b;
+   color: #fff;
+   font-size: 22px;
+   padding: 20px;
+   position: fixed;
+   float: bottom;
+   bottom: 0%;
 
-.box img{ 
-  opacity: 0;
-  overflow-y: scroll; 
-}
+ }
 
-.lbox:target .box img{ 
-  opacity: 1;
-  transition: opacity .4s linear;
-}
+ .footer:hover {
+   background-color: #1b1b1b;
+   ;
+   color: #6ebfc5;
+ }
 
-.btn2{
-  color: #fff;
-  font-family: 'Arial';
-  text-decoration: none;
-  position: absolute; 
-  font-size: 40px;
-  text-align: center;
-}
+ .footer-texte {
+   padding-right: 100px;
 
-#prev{
-  top: 45%;
-  left: 5%;
-  
-padding: 15px
-}
+   text-align: center;
+   align-items: center;
+ }
 
-#next{
-  top: 45%;
-  right: 5%;
-}
+ .portifolio {
+   width: 100%;
+   min-width: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-#close{
-  top: 0%;
-  right: 2%;
-}
+ .box-img {
+   width: 600px;
+   height: 96%;
+   background-color: #fff;
+   padding: .5%;
+   box-shadow: 5px 5px 15px -1px #ccc;
+
+   transform: translate(30%, 5%);
+ }
+
+
+ .box-img .img {
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: top;
+   transition: all linear .3s
+ }
+
+ .box-img .jms1 {
+   background-image: url(../images/jms/jms01.png);
+ }
+
+ .box-img .jms2 {
+   background-image: url(../images/jms/jms2.png);
+ }
+
+ .box-img .jof1 {
+   background-image: url(../images/joferbino/joferbino-11.png);
+ }
+
+ .box-img .jof2 {
+   background-image: url(../images/joferbino/joferbino-2.png);
+ }
+
+ .box-img .jof3 {
+   background-image: url(../images/joferbino/joferbino-5.png);
+ }
+
+ .box-img .doar1 {
+   background-image: url(../images/doardigital/doar2.png);
+ }
+
+ .box-img .doar2 {
+   background-image: url(../images/doardigital/doar3.png);
+ }
+
+ .box-img .doar3 {
+   background-image: url(../images/doardigital/doar4.png);
+ }
+
+
+ .box-img .img:hover {
+   background-position: bottom;
+
+ }
+
+ .lbox:target .box img {
+   opacity: 1;
+   transition: opacity .4s linear;
+ }
+
+ .btn2 {
+   color: #fff;
+   font-family: 'Arial';
+   text-decoration: none;
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+ }
+
+ #prev {
+   top: 45%;
+   left: -15%;
+
+   padding: 15px
+ }
+
+ #next {
+   top: 45%;
+   right: -15%;
+ }
+
+ #close {
+   top: 0%;
+   right: 2%;
+ }
 
 
 
 
  /* MEDIA QUERYS */
+ @media screen and (min-width: 270px) and (max-width: 954px) {
+  .baixa {
+    padding: 10px 10px 0px 0px !important;
+  }
+  
+   .lbox {
+     padding: 0px 30px 0px 30px !important;
+   } 
+
+   .tamanhoCard {
+     height: 100%;
+     max-width: 60%;
+     top: 0%;
+     left: 0%;
+   }
+
+   .box-img {
+     width: 290px;
+     height: 350px;
+     background-color: #fff;
+     padding: .5%;
+     transform: translate(5%, 15%);
+   }
+
+   .box-img .img {
+     width: 290px;
+   }
+
+   .footer {
+     padding-top: 500px;
+     margin-left: -20px;
+     height: 50px;
+     font-size: 22px;
+     padding: 10px; 
+   }
+
+   .footer-texte {
+     padding-right: 0px;
+   }
+
+ }
+
+
+
+
  @media screen and (min-width: 270px) and (max-width: 304px) {
 
    .portfolio_item:first-of-type {
@@ -131,40 +270,37 @@ padding: 15px
  }
 
  @media screen and (min-width: 686px) and (max-width: 862px) {
-  .portfolio_item:nth-of-type(3n + 1) {
+   .portfolio_item:nth-of-type(3n + 1) {
      grid-column: 2 / span 2;
    }
  }
 
  @media screen and (min-width: 863px) and (max-width: 1038px) {
-  .portfolio_item:nth-of-type(4n + 1) {
-    grid-column: 2 / span 2;
-  }
-}
+   .portfolio_item:nth-of-type(4n + 1) {
+     grid-column: 2 / span 2;
+   }
+ }
 
-@media screen and (min-width: 1039px) and (max-width: 1215px) {
- .portfolio_item:nth-of-type(5n + 1) {
-    grid-column: 2 / span 2;
-  }
-}
+ @media screen and (min-width: 1039px) and (max-width: 1215px) {
+   .portfolio_item:nth-of-type(5n + 1) {
+     grid-column: 2 / span 2;
+   }
+ }
 
-@media screen and (min-width: 1216px) and (max-width: 1391px) {
-  .portfolio_item:nth-of-type(5n + 1) {
-    grid-column: 2 / span 2;
-  }
-}
-
-
-@media screen and (min-width: 1392px) {
-
-  .portfolio_item:nth-of-type(7n + 1) {
-    grid-column: 2 / span 2;
-  }
-}
+ @media screen and (min-width: 1216px) and (max-width: 1391px) {
+   .portfolio_item:nth-of-type(5n + 1) {
+     grid-column: 2 / span 2;
+   }
+ }
 
 
+ @media screen and (min-width: 1392px) {
 
- /* ________________________________________ */
+   .portfolio_item:nth-of-type(7n + 1) {
+     grid-column: 2 / span 2;
+   }
+ }
 
 
-  
+
+ /* tamanhoCard________________________________________ */

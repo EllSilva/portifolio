@@ -2162,6 +2162,7 @@
  }
 
  .inicio_texte {
+    color: #5b979b;
      font-size: 60px;
      font-family: monospace;
      font-weight: bold;
@@ -2169,10 +2170,9 @@
  }
 
  .inicio_texte2 {
-     font-size: 40px;
-     font-family: monospace;
+     font-size: 40px; 
      font-weight: bold;
-     font-family: "tituloprincipal";
+     font-family: "minhaFonte", sans-serif;
  }
 
  .jms1 {
@@ -2283,9 +2283,7 @@
      font-weight: 400;
  }
 
- .mapa {
-     height: 100%;
- }
+
 
  @font-face {
      font-family: titulo;
@@ -2300,6 +2298,12 @@
      position: absolute;
      z-index: 20000
  }
+
+ 
+ .mapa {
+    width: 750px !important;
+    height: 800px;
+}
 
 
 
@@ -2418,7 +2422,12 @@
      .subtitulo {
          font-size: 13px;
      }
-
+     
+     .mapa {
+        width: 350px !important;
+        height: 540px;
+    }
+    
  }
 
  .rotate {
@@ -2430,10 +2439,14 @@
      background-image: url(../images/fundo/preto.jpg);
 
  }
-
+  
  .port_baixo {
      padding-bottom: 10%;
  }
+
+ .port_alto {
+    padding-top: 10%;
+}
 
  #mapid {
      height: 600px;

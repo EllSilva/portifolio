@@ -4,102 +4,109 @@
 
             <div class="row clearfix">
                 <div class="col-lg-5 col-md-12 top">
-                    <div class="tab-content"> 
-                            <div class="row clearfix">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="cardJms project_widget">
+                    <div class="tab-content">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="cardJms project_widget">
 
-                                        <div class="body">
+                                    <div class="body">
 
-                                            <h5 class="m-t-30 nome_titulo">
-                                                Contate-me
-                                            </h5>
-                                            <p class="m-t-10 subtitulo">
-                                                Estou interessado em oportunidades freelance – especialmente projetos
-                                                ambiciosos ou grandes. No entanto, se você tiver outra solicitação ou
-                                                pergunta, não hesite em usar o formulário.
-                                            </p>
+                                        <h5 class="m-t-30 nome_titulo">
+                                            Contate-me
+                                        </h5>
+                                        <p class="m-t-10 subtitulo">
+                                            Estou interessado em oportunidades freelance – especialmente projetos
+                                            ambiciosos ou grandes. No entanto, se você tiver outra solicitação ou
+                                            pergunta, não hesite em usar o formulário.
+                                        </p>
 
-                                            <div class="cardJms">
+                                        <div class="cardJms">
 
-                                                <div class="body">
-                                                    <form @submit="enviar" method="post" novalidate="true"> 
+                                            <div class="body">
+                                                <form @submit="enviar" method="post" novalidate="true">
                                                     <div class="form-group focused">
-                                                        <input type="text" class="form-control" v-model="nome" placeholder="Nome">
-                                                        <p v-if="erro_nome.length"> 
-                                                            <div>
-                                                                <div class="p" v-for="error in erro_nome">{{ error }}</div>
-                                                            </div>
-                                                            </p>
+                                                        <input type="text" class="form-control" v-model="nome"
+                                                            placeholder="Nome">
+                                                        <p v-if="erro_nome.length">
+                                                        <div>
+                                                            <div class="p" v-for="error in erro_nome">{{ error }}</div>
+                                                        </div>
+                                                        </p>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control" v-model="email" placeholder="E-mail">
-                                                        <p v-if="erro_email.length"> 
-                                                            <div>
-                                                                <div class="p" v-for="error in erro_email">{{ error }}</div>
-                                                            </div>
-                                                            </p>
+                                                        <input type="email" class="form-control" v-model="email"
+                                                            placeholder="E-mail">
+                                                        <p v-if="erro_email.length">
+                                                        <div>
+                                                            <div class="p" v-for="error in erro_email">{{ error }}</div>
+                                                        </div>
+                                                        </p>
                                                     </div>
                                                     <div class="form-group focused">
-                                                        <input type="text" class="form-control" v-model="assunto" placeholder="Assunto">
-                                                        <p v-if="erro_assunto.length"> 
-                                                            <div>
-                                                                <div class="p" v-for="error in erro_assunto">{{ error }}</div>
-                                                            </div>
-                                                            </p>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <textarea rows="4" class="form-control no-resize" v-model="mensagem"
-                                                            placeholder="Message"></textarea>
-                                                            <p v-if="erro_mensagem.length"> 
-                                                                <div>
-                                                                    <div class="p" v-for="error in erro_mensagem">{{ error }}</div>
-                                                                </div>
-                                                                </p>
-                                                    </div> 
-                                                        <div class="form-group">
-                                                            <div class="form-check m-l-10">
-                                                                <label class="form-check-label">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="checkbox" name="checkbox">Aceito Enviar os
-                                                                    meus dados
-                                                                    <span class="form-check-sign">
-                                                                        <span class="check"></span>
-                                                                    </span>
-                                                                </label>
+                                                        <input type="text" class="form-control" v-model="assunto"
+                                                            placeholder="Assunto">
+                                                        <p v-if="erro_assunto.length">
+                                                        <div>
+                                                            <div class="p" v-for="error in erro_assunto">{{ error }}
                                                             </div>
                                                         </div>
-  
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea rows="4" class="form-control no-resize"
+                                                            v-model="mensagem" placeholder="Message"></textarea>
+                                                        <p v-if="erro_mensagem.length">
+                                                        <div>
+                                                            <div class="p" v-for="error in erro_mensagem">{{ error }}
+                                                            </div>
+                                                        </div>
+                                                        </p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-check m-l-10">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="checkbox" name="checkbox">Aceito Enviar os
+                                                                meus dados
+                                                                <span class="form-check-sign">
+                                                                    <span class="check"></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
                                                     <button class="btn btn-info btn-round">Enviar mensagem!</button>
                                                 </form>
-                                             
-                                                </div>
-                                            </div>
 
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
+                            </div>
 
-                            </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12">
- 
+
                     <div class="cardJms">
-<div class="">
-    <div class="inf-map">
-        Joaquim Silva,<br>
-            Luanda-Angola <br /> Av. 21 de Janeiro, Bairro Gamek
-   
-        <br><br><span><span>@</span>:Joaquimmigueldecristo@gmail.com</span>
+                            <div class="inf-map">
+                                Joaquim Silva,<br>
+                                Luanda-Angola <br /> Av. 21 de Janeiro, Bairro Gamek
 
-        <br><span><span><i class="fa-solid fa-phone"></i></span>: 997616181</span>
-        
-    </div>
-</div>
+                                <br><br><span><span>@</span>:Joaquimmigueldecristo@gmail.com</span>
 
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.9286999212713!2d13.202604721928196!3d-8.886221373155175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f4ed34f8405f%3A0xedb0d1af2a5d9e37!2sO%20Nosso%20Centro!5e0!3m2!1sen!2sin!4v1655979236508!5m2!1sen!2sin" width="800" height="800" style="border:0;"></iframe>
+                                <br><span><span><i class="fa-solid fa-phone"></i></span>: 997616181</span>
+
+                            </div>
+
+                        <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.9286999212713!2d13.202604721928196!3d-8.886221373155175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f4ed34f8405f%3A0xedb0d1af2a5d9e37!2sO%20Nosso%20Centro!5e0!3m2!1sen!2sin!4v1655979236508!5m2!1sen!2sin"
+                            style="border:0;" class="mapa"></iframe>
                     </div>
+                        </div>
                 </div>
             </div>
         </div>
