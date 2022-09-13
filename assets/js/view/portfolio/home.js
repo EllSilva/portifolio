@@ -14,11 +14,12 @@ export default {
             teste: "teste0",
             joferbino: "joferbino0",
             doar: "doar0",
+            amiguinho: "amiguinho0",
         }
     },
 
     methods: {
-
+      
         kim() { 
         },
 

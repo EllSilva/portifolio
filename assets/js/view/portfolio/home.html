@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <a href="https://github.com/" class="footer">
+            <a href="https://github.com/" class="footer" target="_blank">
                 <p class="footer-texte">
                     Visitar o Site
                 </p>
@@ -211,7 +211,7 @@
                 </div>
             </div>
 
-            <a href="https://github.com/" class="footer">
+            <a href="https://github.com/" class="footer" target="_blank">
                 <p class="footer-texte">
 
                     Visitar o Site
@@ -290,7 +290,7 @@
                 </div>
             </div>
 
-            <a href="https://github.com/" class="footer">
+            <a href="https://doardigital.com.br/" class="footer" target="_blank">
                 <p class="footer-texte">
                     Visitar o Site
                 </p>
@@ -299,6 +299,82 @@
         </div>
     </div>
 
+    <div class="creche">
+        <div class="row lbox" id="amiguinho">
+            <a href="#/portfolio" class="btn2" id="close">X</a>
+            <div class="col-lg-9 col-md-12">
+
+                <div class="tamanhoCard">
+
+                    <div class="box-img" v-if="amiguinho === 'amiguinho0'">
+                        <div class="img amiguinho1">
+                        </div>
+                        <a @click="amiguinho = 'amiguinho1'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="amiguinho === 'amiguinho1'">
+                        <a @click="amiguinho = 'amiguinho0'" class="btn2" id="prev"><i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img amiguinho2">
+                        </div>
+                        <a @click="amiguinho = 'amiguinho2'" class="btn2" id="next"> <i
+                                class="menu-icon ti-angle-double-right"></i></a>
+                    </div>
+
+                    <div class="box-img" v-else-if="amiguinho === 'amiguinho2'">
+                        <a @click="amiguinho = 'amiguinho1'" class="btn2" id="prev"> <i
+                                class="menu-icon ti-angle-double-left"></i></a>
+                        <div class="img amiguinho3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+                <div class="body subtitulo baixa">
+                    <div class="left-timeline">
+                        <time class="left-time port_baixo" datetime="2017-10-22T12:13">
+                            <span>2 anos atrás</span></time>
+                        <blockquote>
+                            <h5>- Tecnologia </h5>
+                            <p class="blockquote blockquote-primary">
+                                "Javascript"
+                                <br>
+                                "Vue.js"
+                                <br>
+                                "Html"
+                                <br> 
+                                css
+                            </p>
+
+                        </blockquote>
+                        <p>
+                            Site desenvolvido para creche Amiguinho de jesus
+                            <br>
+                            Um dos Projeto desafiador 
+                            <br>
+                        </p>
+                        <h5>- Altor</h5>
+                        <p class="blockquote blockquote-primary">
+                            "Joaquim Silva"
+                            <br>
+
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="https://amiguinhos-jesus.web.app/#/" class="footer" target="_blank">
+                <p class="footer-texte">
+                    Visitar o Site
+                </p>
+            </a>
+
+        </div>
+    </div>
 
 
 
@@ -390,6 +466,13 @@
                                             <a href="#doar2">
                                                 <img class="img " src="assets/images/doardigital.jpg">
                                             </a>
+
+                                        </div>
+
+                                        <div class="portfolio_item" v-if="jms === 'web' || jms === 'todos'">
+                                            <a href="#amiguinho">
+                                                <img class="img " src="assets/images/amiguinho.png">
+                                             </a>
 
                                         </div>
 

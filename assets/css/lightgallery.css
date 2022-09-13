@@ -164,6 +164,24 @@
    background-image: url(../images/doardigital/doar4.png);
  }
 
+ .box-img .amiguinho1 {
+  background-image: url(../images/creche/amiguinho1.png);
+}
+
+ .box-img .amiguinho2 {
+  background-image: url(../images/creche/amiguinho2.png);
+}
+
+.box-img .amiguinho3 {
+  background-image: url(../images/creche/amiguinho3.png);
+}
+
+.box-img .amiguinho4 {
+  background-image: url(../images/creche/amiguinho4.png);
+}
+
+ 
+ 
 
  .box-img .img:hover {
    background-position: bottom;
